@@ -38,6 +38,19 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   } );
   
 
+  //FilterImage
+  //Returns Filtered Image
+  app.get("/filteredimage",async(req,res) => {
+    const imageUrl = req.query.image_url;
+    if(imageUrl != null) {
+      filterImageFromURL(imageUrl).then(response => {
+        res.status(200).sendFile(response);
+      });
+    } else {
+      res.status(400).send("Hey Bro! image_url parameter is missing");
+    }
+  });
+
   // Start the Server
   app.listen( port, () => {
       console.log( `server running http://localhost:${ port }` );
