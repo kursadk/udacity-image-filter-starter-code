@@ -8,7 +8,7 @@ You can find assignment from [This Repo](https://github.com/kursadk/udacity-imag
 
 2. Screenshots of elastic beanstalk deployment.
 
-[EB Created](https://github.com/kursadk/udacity-image-filter-starter-code/blob/master/deployment_screenshots/EB-Created.PNG)
+[EB Created Screenshot](https://github.com/kursadk/udacity-image-filter-starter-code/blob/master/deployment_screenshots/EB-Created.PNG)
 
 3. Endpoint URL
 
